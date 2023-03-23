@@ -1,0 +1,14 @@
+[package]
+name = "webbrowser-experiments"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+wry = "0.27.0"
+
+[target.arm-unknown-linux-gnueabihf]
+linker = "arm-linux-gnueabihf-gcc"
+
+# Pi 2/3/4
+[target.armv7-unknown-linux-gnueabihf]
+linker = "arm-none-linux-gnueabihf-gcc"
